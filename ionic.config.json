@@ -1,0 +1,7 @@
+{
+  "name": "iRecycle",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
