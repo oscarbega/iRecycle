@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { SubmittionComponent } from './submittion.component';
+import { SubmissionComponent } from './submission.component';
 
-describe('SubmittionComponent', () => {
-  let component: SubmittionComponent;
-  let fixture: ComponentFixture<SubmittionComponent>;
+describe('SubmissionComponent', () => {
+  let component: SubmissionComponent;
+  let fixture: ComponentFixture<SubmissionComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SubmittionComponent ],
+      declarations: [ SubmissionComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(SubmittionComponent);
+    fixture = TestBed.createComponent(SubmissionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
