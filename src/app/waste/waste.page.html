@@ -1,19 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar class="toolbar">
+<ion-content [fullscreen]="true" class="page">
+  <div class="toolbar">
     <ion-buttons slot="start">
       <ion-back-button
+        class="button"
         defaultHref="/"
-        (click)="volverPaginaAnterior()"
+        (click)="returnPage()"
       ></ion-back-button>
     </ion-buttons>
     <div class="toolbar-content">
       <p class="title">Guide</p>
       <p class="subtitle">Waste type</p>
     </div>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
+  </div>
   <div class="body-container">
     <div
       class="container--m"

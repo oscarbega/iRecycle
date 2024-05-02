@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class WastePage {
   constructor(private router: Router, private navCtrl: NavController) {}
 
-  volverPaginaAnterior() {
+  returnPage() {
     this.navCtrl.back();
   }
   openNewPage(page: string) {
