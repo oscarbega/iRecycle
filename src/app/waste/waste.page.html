@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true" class="page">
+  <div class="toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button
+        class="button"
+        defaultHref="/"
+        (click)="returnPage()"
+      ></ion-back-button>
+    </ion-buttons>
+    <div class="toolbar-content">
+      <p class="title">Guide</p>
+      <p class="subtitle">Waste type</p>
+    </div>
+  </div>
+  <div class="body-container">
+    <div
+      class="container--m"
+      id="recyclable"
+      (click)="openNewPage('container')"
+    >
+      <p class="text">Recyclable Materials</p>
+      <img class="img" src="../../assets/img/waste.png" alt="img recyclable" />
+    </div>
+    <div class="container--m" id="mixted" (click)="openNewPage('container')">
+      <img class="img" src="../../assets/img/waste.png" alt="img mixed" />
+      <p class="text">Mixed Waste</p>
+    </div>
+
+    <div
+      class="container--m"
+      id="compostable"
+      (click)="openNewPage('container')"
+    >
+      <p class="text">Compostable Waste</p>
+      <img class="img" src="../../assets/img/waste.png" alt="img compostable" />
+    </div>
+    <div class="container--m" id="hazardous" (click)="openNewPage('container')">
+      <img class="img" src="../../assets/img/waste.png" alt="img hazardous" />
+      <p class="text">Hazardous Waste</p>
+    </div>
+  </div>
+</ion-content>
