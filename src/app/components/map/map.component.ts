@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Geolocation } from '@capacitor/geolocation'
 import * as L from 'leaflet'
 
 @Component({
@@ -14,15 +15,18 @@ export class MapComponent  implements OnInit,AfterViewInit {
 
   ngOnInit() {}
 
-  ngAfterViewInit(): void {
-    this.initMap()
+  async ngAfterViewInit(): Promise<void> {
+    await this.initMap()
   }
 
-  initMap(){
+  async initMap(){
+    let location = await Geolocation.getCurrentPosition()
     this.map = L.map('map',{
-      center:[0,0],
-      zoom: 3
+      center:[location.coords.latitude,location.coords.longitude],
+      zoom: 18
     })
+
+    const positionMarker = L.marker(L.latLng(location.coords.latitude,location.coords.longitude))
 
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
       maxZoom:18,
@@ -30,6 +34,9 @@ export class MapComponent  implements OnInit,AfterViewInit {
     })
 
     tiles.addTo(this.map)
+    positionMarker.addTo(this.map)
   }
+
+
 
 }
