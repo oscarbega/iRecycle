@@ -60,8 +60,10 @@
 
   border-radius: 15px;
 
-  width: 50%;
-  margin-left: 25%;
+  padding: 7px;
+
+  width: 75%;
+  margin-left: 12.5%;
 }
 
 .container--r input[type="number"]{
@@ -72,16 +74,64 @@
   background-color: #FFDC55;
 }
 
+#bottle{
+  width: 3.3125em;
+  position: absolute;
+  left: 9.875em;
+}
+
+#tetabrik{
+   width: 3.3125em;
+   position: absolute;
+   left: 12.875em;
+ }
+
 #paper {
   background-color: #95BEF3;
+}
+
+#box{
+  width: 3.0em;
+  position: absolute;
+  left: 1.875em;
+}
+
+#notes{
+  width: 3.0em;
+  position: absolute;
+  left: 4.875em;
 }
 
 #glass {
   background-color: #7ED07E;
 }
 
+#jar{
+  width: 3.3125em;
+  position: absolute;
+  left: 9.875em;
+}
+
+#beer{
+  width: 3.3125em;
+  position: absolute;
+  left: 12.875em;
+}
+
 #organic {
   background-color: #D9D9D9;
+}
+
+#banana{
+  width: 3.75em;
+  position: absolute;
+  left: 1.875em;
+}
+
+#fish{
+  width: 3.75em;
+  position: absolute;
+  left: 4.375em;
 }
 
 #photo {
@@ -90,6 +140,11 @@
 
 #submissionButton{
   background-color: #B4C3AF;
+}
+
+#scan{
+  position: absolute;
+  left: 10.875em;
 }
 
 p{
