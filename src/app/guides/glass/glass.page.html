@@ -1,13 +1,78 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>glass</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="page">
+  <div class="toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button
+        class="button"
+        defaultHref="/"
+        (click)="returnPage()"
+      ></ion-back-button>
+    </ion-buttons>
+    <div class="toolbar-content">
+      <p class="title">Guide</p>
+      <p class="subtitle">Green Container</p>
+    </div>
+  </div>
+  <div class="body-container">
+    <header>
+      <h1>Glass</h1>
+    </header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">glass</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Welcome to our recycling guide on glass! Recycling glass is important
+        for conserving resources and reducing waste. Let's explore how you can
+        recycle glass effectively.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why Recycle Glass?</h2>
+      <p>
+        Glass recycling helps conserve energy, reduce greenhouse gas emissions,
+        and save raw materials. By recycling glass, you can contribute to a
+        cleaner environment and a more sustainable future.
+      </p>
+    </section>
+
+    <section>
+      <h2>How to Recycle Glass</h2>
+      <p>Follow these steps to recycle glass:</p>
+      <ol>
+        <li>
+          Separate glass by color (clear, green, and brown) as different colors
+          have different compositions and melting points.
+        </li>
+        <li>
+          Remove any non-glass contaminants, such as caps, corks, and labels,
+          before recycling.
+        </li>
+        <li>Rinse glass containers to remove any food residue or liquids.</li>
+        <li>
+          Place recyclable glass in the designated recycling bin or take it to a
+          recycling center.
+        </li>
+        <li>
+          Avoid breaking glass as broken glass can be hazardous to recycling
+          workers. If glass breaks accidentally, clean it up carefully and
+          dispose of it properly.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Examples of Recyclable Glass Items</h2>
+      <p>Common types of recyclable glass include:</p>
+      <ul>
+        <li>Bottles (e.g., wine bottles, beer bottles)</li>
+        <li>Jars (e.g., sauce jars, jam jars)</li>
+        <li>Cups and glasses</li>
+        <li>Food containers</li>
+        <li>
+          Window panes (check with your local recycling program as some may not
+          accept window glass)
+        </li>
+      </ul>
+    </section>
+  </div></ion-content
+>

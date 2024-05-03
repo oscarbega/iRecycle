@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-paper',
-  templateUrl: './paper.page.html',
-  styleUrls: ['./paper.page.scss'],
+  selector: 'app-hazardous',
+  templateUrl: './hazardous.page.html',
+  styleUrls: ['./hazardous.page.scss'],
 })
-export class PaperPage {
+export class HazardousPage {
   constructor(private navCtrl: NavController) {}
 
   returnPage() {
