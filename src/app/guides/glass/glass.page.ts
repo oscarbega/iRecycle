@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-glass',
   templateUrl: './glass.page.html',
   styleUrls: ['./glass.page.scss'],
 })
-export class GlassPage implements OnInit {
+export class GlassPage {
+  constructor(private navCtrl: NavController) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  returnPage() {
+    this.navCtrl.back();
   }
-
 }

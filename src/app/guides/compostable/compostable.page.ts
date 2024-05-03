@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-paper',
-  templateUrl: './paper.page.html',
-  styleUrls: ['./paper.page.scss'],
+  selector: 'app-compostable',
+  templateUrl: './compostable.page.html',
+  styleUrls: ['./compostable.page.scss'],
 })
-export class PaperPage {
+export class CompostablePage {
   constructor(private navCtrl: NavController) {}
 
   returnPage() {

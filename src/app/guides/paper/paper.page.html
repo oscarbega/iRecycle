@@ -1,13 +1,74 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>paper</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="page">
+  <div class="toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button
+        class="button"
+        defaultHref="/"
+        (click)="returnPage()"
+      ></ion-back-button>
+    </ion-buttons>
+    <div class="toolbar-content">
+      <p class="title">Guide</p>
+      <p class="subtitle">Blue Container</p>
+    </div>
+  </div>
+  <div class="body-container">
+    <header>
+      <h1>Paper and Cardboard</h1>
+    </header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">paper</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Welcome to our recycling guide on paper and cardboard! Recycling these
+        materials is crucial for environmental sustainability. Here's how you
+        can do your part.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why Recycle Paper and Cardboard?</h2>
+      <p>
+        Paper and cardboard recycling helps reduce landfill waste, conserves
+        natural resources, and minimizes pollution. By recycling these
+        materials, you can contribute to a cleaner and healthier environment.
+      </p>
+    </section>
+
+    <section>
+      <h2>How to Recycle Paper and Cardboard</h2>
+      <p>Follow these steps to recycle paper and cardboard effectively:</p>
+      <ol>
+        <li>
+          Collect all paper and cardboard waste in a designated bin or bag.
+        </li>
+        <li>
+          Remove any non-recyclable contaminants, such as food residues or
+          plastic coatings.
+        </li>
+        <li>
+          Flatten cardboard boxes to save space and make transportation easier.
+        </li>
+        <li>
+          Take your paper and cardboard to a recycling center or put them in
+          your curbside recycling bin.
+        </li>
+        <li>
+          Ensure that your recyclables are clean and dry to prevent
+          contamination.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Examples of Recyclable Paper and Cardboard Items</h2>
+      <ul>
+        <li>Newspapers and magazines</li>
+        <li>Office paper and envelopes</li>
+        <li>Cardboard boxes and packaging</li>
+        <li>Cereal boxes and paper towel rolls</li>
+        <li>Cardboard egg cartons</li>
+      </ul>
+    </section>
+  </div>
 </ion-content>
