@@ -5,7 +5,8 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },  {
+  },
+  {
     path: 'container',
     loadChildren: () => import('./container/container.module').then( m => m.ContainerPageModule)
   },
@@ -15,19 +16,19 @@ const routes: Routes = [
   },
   {
     path: 'plastic',
-    loadChildren: () => import('./plastic/plastic.module').then( m => m.PlasticPageModule)
+    loadChildren: () => import('./guides/plastic/plastic.module').then( m => m.PlasticPageModule)
   },
   {
     path: 'paper',
-    loadChildren: () => import('./paper/paper.module').then( m => m.PaperPageModule)
+    loadChildren: () => import('./guides/paper/paper.module').then( m => m.PaperPageModule)
   },
   {
     path: 'organic',
-    loadChildren: () => import('./organic/organic.module').then( m => m.OrganicPageModule)
+    loadChildren: () => import('./guides/organic/organic.module').then( m => m.OrganicPageModule)
   },
   {
     path: 'glass',
-    loadChildren: () => import('./glass/glass.module').then( m => m.GlassPageModule)
+    loadChildren: () => import('./guides/glass/glass.module').then( m => m.GlassPageModule)
   }
 
 ];
