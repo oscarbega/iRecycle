@@ -12,6 +12,22 @@ const routes: Routes = [
   {
     path: 'waste',
     loadChildren: () => import('./waste/waste.module').then( m => m.WastePageModule)
+  },
+  {
+    path: 'plastic',
+    loadChildren: () => import('./plastic/plastic.module').then( m => m.PlasticPageModule)
+  },
+  {
+    path: 'paper',
+    loadChildren: () => import('./paper/paper.module').then( m => m.PaperPageModule)
+  },
+  {
+    path: 'organic',
+    loadChildren: () => import('./organic/organic.module').then( m => m.OrganicPageModule)
+  },
+  {
+    path: 'glass',
+    loadChildren: () => import('./glass/glass.module').then( m => m.GlassPageModule)
   }
 
 ];
