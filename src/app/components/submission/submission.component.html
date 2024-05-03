@@ -1,0 +1,53 @@
+<div class="body-container">
+  <div class="container--l" id="plastic">
+    <div class="text">
+      <p>Yellow Container</p>
+      <input
+        type="number"
+        placeholder="Input Trash (kg)"
+        onKeyUp="if(this.value>10){this.value='10';}else if(this.value<0){this.value='0';}"
+      />
+    </div>
+    <img src="assets/img/plastic.png" />
+  </div>
+  <div class="container--l" id="paper">
+    <img src="assets/img/paper.png" />
+    <div class="text">
+      <p>Blue Container</p>
+      <input
+        type="number"
+        placeholder="Input Trash (kg)"
+        onKeyUp="if(this.value>10){this.value='10';}else if(this.value<0){this.value='0';}"
+      />
+    </div>
+  </div>
+  <div class="container--l" id="glass">
+    <div class="text">
+      <p>Green Container</p>
+      <input
+        type="number"
+        placeholder="Input Trash (kg)"
+        onKeyUp="if(this.value>10){this.value='10';}else if(this.value<0){this.value='0';}"
+      />
+    </div>
+    <img src="assets/img/glass.png" />
+  </div>
+  <div class="container--l" id="organic">
+    <img src="assets/img/waste.png" />
+    <div class="text">
+      <p>Grey Container</p>
+      <input
+        type="number"
+        placeholder="Input Trash (kg)"
+        onKeyUp="if(this.value>10){this.value='10';}else if(this.value<0){this.value='0';}"
+      />
+    </div>
+  </div>
+  <div class="container--r" id="photo">
+    <p style="align-self: center">Photo (Required)</p>
+    <input type="file" required capture="user" accept="environment/*" />
+  </div>
+  <div class="container--s" id="submissionButton">
+    <p>Submit</p>
+  </div>
+</div>

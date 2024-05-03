@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true" class="page">
+  <div class="toolbar">
+    <p class="title">Guide</p>
+    <p class="subtitle">Choose a guide</p>
+  </div>
+  <div class="body-container">
+    <div
+      class="container--l"
+      id="by-container"
+      (click)="openNewPage('container')"
+    >
+      <p class="text-left">Guide By Container Type</p>
+      <img
+        class="img-right"
+        src="../../assets/img/containers.png"
+        alt="img container"
+      />
+    </div>
+    <div class="container--l" id="by-waste" (click)="openNewPage('waste')">
+      <p class="text-left">Guide By Waste Type</p>
+      <img class="img-right" src="../../assets/img/waste.png" alt="img waste" />
+    </div>
+  </div>
+</ion-content>
