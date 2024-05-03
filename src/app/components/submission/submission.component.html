@@ -1,35 +1,51 @@
 <div class="body-container">
   <div class="container--l" id="plastic">
-    <p>Yellow Container</p>
-    <input type="number" placeholder="Input Trash (kg)"
-           onKeyUp="if(this.value>10){this.value='10';}else if(this.value<0){this.value='0';}">
-    <img src="assets/imagen%20plastico.svg" id="bottle">
-    <img src="assets/imagen%20tetrabrik.svg" id="tetabrik">
+    <div class="text">
+      <p>Yellow Container</p>
+      <input
+        type="number"
+        placeholder="Input Trash (kg)"
+        onKeyUp="if(this.value>10){this.value='10';}else if(this.value<0){this.value='0';}"
+      />
+    </div>
+    <img src="assets/img/plastic.png" />
   </div>
-  <div class="container--r" id="paper">
-    <p>Blue Container</p>
-    <input type="number" placeholder="Input Trash (kg)"
-           onKeyUp="if(this.value>10){this.value='10';}else if(this.value<0){this.value='0';}">
-    <img src="assets/imagen%20carton.svg" id="box">
-    <img src="assets/imagen%20papel.svg" id="notes">
+  <div class="container--l" id="paper">
+    <img src="assets/img/paper.png" />
+    <div class="text">
+      <p>Blue Container</p>
+      <input
+        type="number"
+        placeholder="Input Trash (kg)"
+        onKeyUp="if(this.value>10){this.value='10';}else if(this.value<0){this.value='0';}"
+      />
+    </div>
   </div>
   <div class="container--l" id="glass">
-    <p>Green Container</p>
-    <input type="number" placeholder="Input Trash (kg)"
-           onKeyUp="if(this.value>10){this.value='10';}else if(this.value<0){this.value='0';}">
-    <img src="assets/imagen%20tarro.svg" id="jar">
-    <img src="assets/imagen%20botella.svg" id="beer">
+    <div class="text">
+      <p>Green Container</p>
+      <input
+        type="number"
+        placeholder="Input Trash (kg)"
+        onKeyUp="if(this.value>10){this.value='10';}else if(this.value<0){this.value='0';}"
+      />
+    </div>
+    <img src="assets/img/glass.png" />
   </div>
-  <div class="container--r" id="organic">
-    <p>Grey Container</p>
-    <input type="number" placeholder="Input Trash (kg)"
-           onKeyUp="if(this.value>10){this.value='10';}else if(this.value<0){this.value='0';}">
-    <img src="assets/imagen%20platano.svg" id="banana">
-    <img src="assets/imagen%20pescado.svg" id="fish">
+  <div class="container--l" id="organic">
+    <img src="assets/img/waste.png" />
+    <div class="text">
+      <p>Grey Container</p>
+      <input
+        type="number"
+        placeholder="Input Trash (kg)"
+        onKeyUp="if(this.value>10){this.value='10';}else if(this.value<0){this.value='0';}"
+      />
+    </div>
   </div>
-  <div class="container--l" id="photo">
-    <p>Photo (Required)</p>
-    <input type="file" required capture="user" accept="environment/*">
+  <div class="container--r" id="photo">
+    <p style="align-self: center">Photo (Required)</p>
+    <input type="file" required capture="user" accept="environment/*" />
   </div>
   <div class="container--s" id="submissionButton">
     <p>Submit</p>

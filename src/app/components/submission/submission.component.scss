@@ -14,9 +14,13 @@
   margin-right: 20px;
 }
 
+.text {
+  width: 60%;
+}
+
 .container--l {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: revert;
 
@@ -67,97 +71,51 @@
   margin-left: 12.5%;
 }
 
-.container--r input[type="number"]{
+.container--r input[type="number"] {
   text-align: end;
 }
 
+img {
+  height: 60px;
+}
 #plastic {
-  background-color: #FFDC55;
+  background-color: #ffdc55;
 }
-
-#bottle{
-  width: 3.3125em;
-  position: absolute;
-  left: 9.875em;
-}
-
-#tetabrik{
-   width: 3.3125em;
-   position: absolute;
-   left: 12.875em;
- }
 
 #paper {
-  background-color: #95BEF3;
-}
-
-#box{
-  width: 3.0em;
-  position: absolute;
-  left: 1.875em;
-}
-
-#notes{
-  width: 3.0em;
-  position: absolute;
-  left: 4.875em;
+  background-color: #95bef3;
 }
 
 #glass {
-  background-color: #7ED07E;
-}
-
-#jar{
-  width: 3.3125em;
-  position: absolute;
-  left: 9.875em;
-}
-
-#beer{
-  width: 3.3125em;
-  position: absolute;
-  left: 12.875em;
+  background-color: #7ed07e;
 }
 
 #organic {
-  background-color: #D9D9D9;
-}
-
-#banana{
-  width: 3.75em;
-  position: absolute;
-  left: 1.875em;
-}
-
-#fish{
-  width: 3.75em;
-  position: absolute;
-  left: 4.375em;
+  background-color: #d9d9d9;
 }
 
 #photo {
-  background-color: #FF8080;
+  background-color: #ff8080;
 }
 
-#submissionButton{
-  background-color: #B4C3AF;
+#submissionButton {
+  background-color: #b4c3af;
 }
 
-#scan{
+#scan {
   position: absolute;
   left: 10.875em;
 }
 
-p{
+p {
   margin-block-start: 0.3em;
   margin-block-end: 0.3em;
 }
 
-input[type="number"]{
+input[type="number"] {
   background: inherit;
   border: none;
   color: black;
-  width: 55%;
 }
 
 input[type="file"] {
@@ -166,6 +124,7 @@ input[type="file"] {
   position: relative;
   outline: none;
   font-size: 15px;
+  width: 100%;
 
   &::file-selector-button {
     border-radius: 4px;
@@ -220,10 +179,10 @@ input[type="file"] {
 }
 
 ::placeholder {
-  color: #1E2832;
-  opacity: 1; /* Firefox */
+  color: #1e2832;
+  opacity: 1;
 }
 
-::-ms-input-placeholder { /* Edge 12 -18 */
-  color: #1E2832;
+::-ms-input-placeholder {
+  color: #1e2832;
 }
