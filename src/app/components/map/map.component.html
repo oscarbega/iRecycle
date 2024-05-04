@@ -1,7 +1,7 @@
 <div class="map-container">
   <div class="map-frame">
     <div class="search-bar">
-        <input list="results" type="search" [(ngModel)]="searchValue" (change)="onSubmit()" (keyup)="formUpdate()" >
+        <input list="results" type="search" [(ngModel)]="searchValue" (change)="onSubmit()" (ngModelChange)="formUpdate()" >
         <datalist id="results">
           <option *ngFor="let result of results" [value]="result.label"></option>
         </datalist>
