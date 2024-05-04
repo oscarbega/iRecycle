@@ -1,11 +1,13 @@
 import { Timestamp } from '@angular/fire/firestore';
 
 export interface TrashSubmission {
-  grey: number,
-  blue: number,
-  yellow: number,
-  green: number,
-  photoRef: string,
-  uid: string,
-  fecha: Timestamp
+  grey?: string,
+  blue?: string,
+  yellow?: string,
+  green?: string,
+  photoRef?: string,
+  id?: string,
+  fecha?: Timestamp,
+  latitude?: string,
+  longitude?: string
 }
