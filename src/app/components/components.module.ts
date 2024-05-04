@@ -14,12 +14,14 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { firebaseConfig } from 'src/environments/environment';
 import { MapService } from '../services/map.service';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [MapComponent, SubmissionComponent],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[MapComponent, SubmissionComponent],
   providers:[MapService]

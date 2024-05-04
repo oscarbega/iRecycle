@@ -15,14 +15,30 @@
   position: absolute;
   z-index: 10000;
 }
-
 input[type="search"]{
   font-size: large;
   padding: 10px;
+  padding-right: 50px;
   width: 100%;
   border-radius: 30px;
   border: 0;
   box-shadow: 0px 3px 10px rgba($color: #000000, $alpha: 0.4);
+  text-overflow: ellipsis !important;
+  /* for Firefox */ 
+  -moz-appearance: none; 
+  /* for Safari, Chrome, Opera */ 
+  -webkit-appearance: none; 
+}
+::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+.search-icon{
+  position: absolute;
+  width: 30px;
+  margin-top: 9px;
+  right: 30px;
+  opacity: 0.5;
 }
 
 .map-frame {
