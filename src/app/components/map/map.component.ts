@@ -148,7 +148,7 @@ export class MapComponent  implements AfterViewInit {
         } else if (c.haveBlue && c.haveGreen){
           containerMarker.setIcon(this.containerIcons.iconygg);
         } else if (c.haveGreen){
-          containerMarker.setIcon(this.containerIcons.iconygg);
+          containerMarker.setIcon(this.containerIcons.icongg);
         } else {
           containerMarker.setIcon(this.containerIcons.icong);
         }
