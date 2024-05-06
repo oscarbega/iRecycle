@@ -156,12 +156,12 @@ export class MapComponent  implements AfterViewInit {
         
         const popup =new L.Popup().setContent(
           `
-          <h3>Contenedores disponibles</h3>
+          <h3>Available Bins</h3>
           <ul>
-          <li>Contenedor General</li>
-          ${c.haveBlue ? "<li>Contenedor de papel</li>":""}
-          ${c.haveGreen ? "<li>Contenedor de vidrio</li>":""}
-          ${c.haveYellow ? "<li>Contenedor de plástico</li>":""}
+          <li>Grey Bin</li>
+          ${c.haveBlue ? "<li>Blue Bin</li>":""}
+          ${c.haveGreen ? "<li>Green Bin</li>":""}
+          ${c.haveYellow ? "<li>Yellow Bin</li>":""}
           </ul>
           `
         )
